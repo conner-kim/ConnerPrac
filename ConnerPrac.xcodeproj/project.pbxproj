@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0EFD8AB99811EBBBE447EE /* Pods_ConnerPrac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB827B606BBE4AF0435872 /* Pods_ConnerPrac.framework */; };
+		13229E0028E092DA001F21D6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 13229DFF28E092DA001F21D6 /* RxCocoa */; };
+		13229E0228E092DA001F21D6 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 13229E0128E092DA001F21D6 /* RxRelay */; };
+		13229E0428E092DA001F21D6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 13229E0328E092DA001F21D6 /* RxSwift */; };
 		13323BAE28DB48C0006111C3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13323BAC28DB48C0006111C3 /* DetailVC.swift */; };
 		13323BAF28DB48C0006111C3 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13323BAD28DB48C0006111C3 /* DetailVC.xib */; };
 		13C74E4E28DB261000757BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C74E4D28DB261000757BFA /* AppDelegate.swift */; };
@@ -15,12 +19,13 @@
 		13C74E5728DB261200757BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C74E5628DB261200757BFA /* Assets.xcassets */; };
 		13C74E5A28DB261200757BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C74E5828DB261200757BFA /* LaunchScreen.storyboard */; };
 		13C74E6228DB2D8300757BFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13C74E6128DB2D8300757BFA /* GoogleService-Info.plist */; };
-		13C74E6528DB2E1700757BFA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 13C74E6428DB2E1700757BFA /* FirebaseAnalytics */; };
-		13C74E6728DB2E1700757BFA /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 13C74E6628DB2E1700757BFA /* FirebaseDynamicLinks */; };
 		13C74E6A28DB344400757BFA /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C74E6928DB344400757BFA /* UILabel+Extensions.swift */; };
+		13D60EAE28E0992C008976E7 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 13D60EAD28E0992C008976E7 /* FirebaseDynamicLinks */; };
+		13D60EB128E099F7008976E7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 13D60EB028E099F7008976E7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03DB827B606BBE4AF0435872 /* Pods_ConnerPrac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnerPrac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13323BAC28DB48C0006111C3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		13323BAD28DB48C0006111C3 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
 		13C74E4A28DB261000757BFA /* ConnerPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnerPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +40,8 @@
 		13C74E6B28DB386200757BFA /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		13C74E6C28DB386200757BFA /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		13C74E6D28DB38A900757BFA /* ConnerPrac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConnerPrac.entitlements; sourceTree = "<group>"; };
+		14D25B00FA7A6F0E1F0AD281 /* Pods-ConnerPrac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnerPrac.release.xcconfig"; path = "Target Support Files/Pods-ConnerPrac/Pods-ConnerPrac.release.xcconfig"; sourceTree = "<group>"; };
+		37B1B424AB365E93312D44BB /* Pods-ConnerPrac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnerPrac.debug.xcconfig"; path = "Target Support Files/Pods-ConnerPrac/Pods-ConnerPrac.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,14 +49,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13C74E6528DB2E1700757BFA /* FirebaseAnalytics in Frameworks */,
-				13C74E6728DB2E1700757BFA /* FirebaseDynamicLinks in Frameworks */,
+				13229E0028E092DA001F21D6 /* RxCocoa in Frameworks */,
+				13229E0428E092DA001F21D6 /* RxSwift in Frameworks */,
+				13229E0228E092DA001F21D6 /* RxRelay in Frameworks */,
+				13D60EB128E099F7008976E7 /* Alamofire in Frameworks */,
+				0C0EFD8AB99811EBBBE447EE /* Pods_ConnerPrac.framework in Frameworks */,
+				13D60EAE28E0992C008976E7 /* FirebaseDynamicLinks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13229DFB28E08882001F21D6 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Function;
+			sourceTree = "<group>";
+		};
 		13323BAB28DB48AC006111C3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +82,8 @@
 			children = (
 				13C74E4C28DB261000757BFA /* ConnerPrac */,
 				13C74E4B28DB261000757BFA /* Products */,
+				3E402F29254F21C225EE2ACD /* Pods */,
+				3116E38DC4A57E9BD4439E1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +98,7 @@
 		13C74E4C28DB261000757BFA /* ConnerPrac */ = {
 			isa = PBXGroup;
 			children = (
+				13229DFB28E08882001F21D6 /* Function */,
 				13323BAB28DB48AC006111C3 /* UI */,
 				13C74E6D28DB38A900757BFA /* ConnerPrac.entitlements */,
 				13C74E6828DB343800757BFA /* Extension */,
@@ -100,6 +121,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		3116E38DC4A57E9BD4439E1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03DB827B606BBE4AF0435872 /* Pods_ConnerPrac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E402F29254F21C225EE2ACD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37B1B424AB365E93312D44BB /* Pods-ConnerPrac.debug.xcconfig */,
+				14D25B00FA7A6F0E1F0AD281 /* Pods-ConnerPrac.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +145,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13C74E5E28DB261200757BFA /* Build configuration list for PBXNativeTarget "ConnerPrac" */;
 			buildPhases = (
+				D9A4B3354BFC18C42AD8296D /* [CP] Check Pods Manifest.lock */,
 				13C74E4628DB261000757BFA /* Sources */,
 				13C74E4728DB261000757BFA /* Frameworks */,
 				13C74E4828DB261000757BFA /* Resources */,
@@ -117,8 +156,11 @@
 			);
 			name = ConnerPrac;
 			packageProductDependencies = (
-				13C74E6428DB2E1700757BFA /* FirebaseAnalytics */,
-				13C74E6628DB2E1700757BFA /* FirebaseDynamicLinks */,
+				13229DFF28E092DA001F21D6 /* RxCocoa */,
+				13229E0128E092DA001F21D6 /* RxRelay */,
+				13229E0328E092DA001F21D6 /* RxSwift */,
+				13D60EAD28E0992C008976E7 /* FirebaseDynamicLinks */,
+				13D60EB028E099F7008976E7 /* Alamofire */,
 			);
 			productName = ConnerPrac;
 			productReference = 13C74E4A28DB261000757BFA /* ConnerPrac.app */;
@@ -150,7 +192,9 @@
 			);
 			mainGroup = 13C74E4128DB261000757BFA;
 			packageReferences = (
-				13C74E6328DB2E1700757BFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				13229DFE28E092DA001F21D6 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				13D60EAC28E0992C008976E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				13D60EAF28E099F7008976E7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 13C74E4B28DB261000757BFA /* Products */;
 			projectDirPath = "";
@@ -175,6 +219,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9A4B3354BFC18C42AD8296D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConnerPrac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13C74E4628DB261000757BFA /* Sources */ = {
@@ -330,6 +399,7 @@
 		};
 		13C74E5F28DB261200757BFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B1B424AB365E93312D44BB /* Pods-ConnerPrac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -340,6 +410,7 @@
 				DEVELOPMENT_TEAM = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnerPrac/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -361,6 +432,7 @@
 		};
 		13C74E6028DB261200757BFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D25B00FA7A6F0E1F0AD281 /* Pods-ConnerPrac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,6 +443,7 @@
 				DEVELOPMENT_TEAM = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnerPrac/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -414,26 +487,57 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		13C74E6328DB2E1700757BFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		13229DFE28E092DA001F21D6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		13D60EAC28E0992C008976E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		13D60EAF28E099F7008976E7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		13C74E6428DB2E1700757BFA /* FirebaseAnalytics */ = {
+		13229DFF28E092DA001F21D6 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13C74E6328DB2E1700757BFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
+			package = 13229DFE28E092DA001F21D6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
-		13C74E6628DB2E1700757BFA /* FirebaseDynamicLinks */ = {
+		13229E0128E092DA001F21D6 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13C74E6328DB2E1700757BFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 13229DFE28E092DA001F21D6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		13229E0328E092DA001F21D6 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13229DFE28E092DA001F21D6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		13D60EAD28E0992C008976E7 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13D60EAC28E0992C008976E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDynamicLinks;
+		};
+		13D60EB028E099F7008976E7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13D60EAF28E099F7008976E7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

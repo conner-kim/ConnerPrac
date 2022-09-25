@@ -12,37 +12,45 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ConnerPrac" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIVisualEffectView">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1z-aO-nIe">
-                                <rect key="frame" x="20" y="437.5" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jV5-Q9-5RQ">
-                                <rect key="frame" x="100" y="478.5" width="214" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="uYw-Iw-GtE">
+                                <rect key="frame" x="20" y="379" width="374" height="138.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="링크" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEO-39-Aok">
+                                        <rect key="frame" x="172.5" y="0.0" width="29.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6t-EA-g5b">
+                                        <rect key="frame" x="144.5" y="48.5" width="85" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="딥링크생성"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3w-HS-c4n">
+                                        <rect key="frame" x="137" y="107.5" width="100.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="파일 다운로드"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="h1z-aO-nIe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1t3-Q8-2HG"/>
-                            <constraint firstItem="h1z-aO-nIe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KD4-BC-tc6"/>
-                            <constraint firstItem="jV5-Q9-5RQ" firstAttribute="top" secondItem="h1z-aO-nIe" secondAttribute="bottom" constant="20" id="Ser-Bu-1l2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jV5-Q9-5RQ" secondAttribute="trailing" constant="100" id="XND-DY-iQq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h1z-aO-nIe" secondAttribute="trailing" constant="20" id="cSz-to-TvD"/>
-                            <constraint firstItem="jV5-Q9-5RQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="psf-st-b5W"/>
+                            <constraint firstItem="uYw-Iw-GtE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QXA-DK-p38"/>
+                            <constraint firstItem="uYw-Iw-GtE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YlT-2Q-pMv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uYw-Iw-GtE" secondAttribute="trailing" constant="20" id="mD5-bk-ksB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JLE-s3-J7G"/>
                     <connections>
-                        <outlet property="linkLB" destination="h1z-aO-nIe" id="iDc-Ip-Eq1"/>
-                        <outlet property="nextViewBTN" destination="jV5-Q9-5RQ" id="mbh-iL-OUY"/>
+                        <outlet property="downloadBTN" destination="q3w-HS-c4n" id="Ktb-OX-hxT"/>
+                        <outlet property="linkLB" destination="iEO-39-Aok" id="YHH-Pq-cbk"/>
+                        <outlet property="nextViewBTN" destination="K6t-EA-g5b" id="2T5-Sp-5QM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,7 +68,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1k3-nJ-GTh"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9fD-1e-jyY"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wb2-Kn-nc6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
