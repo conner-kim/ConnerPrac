@@ -6,31 +6,66 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseDynamicLinks
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure() // Firebase 설정
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        
+        guard let scheme = url.scheme else {
+            return false
+        }
+        
+        if let dLink = DynamicLinks.dynamicLinks().dynamicLink(fromCustomSchemeURL: url){
+            
+            guard let tempURL = dLink.url else {
+                return false
+            }
+//            guard let components = URLComponents(url: tempURL, resolvingAgainstBaseURL: false)?.queryItems else {
+//                return false
+//            }
+            
+            print("dynamiclink url: \(tempURL)")
+        }
+        return false
     }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool{
+        
+        guard let url = userActivity.webpageURL else {
+            return true
+        }
+        let handle = DynamicLinks.dynamicLinks().handleUniversalLink(url) { link, _ in
+            
+            guard let tempURL = link?.url else {
+                return
+            }
+            guard let components = URLComponents(url: tempURL, resolvingAgainstBaseURL: false)?.queryItems else {
+                return
+            }
+            
+            
+            let rawTargetType = components.first {
+                $0.name == "id"
+            }
+            
+            UIApplication.shared.keyWindow?.rootViewController?.navigationController?.pushViewController(DetailVC(id: rawTargetType?.value), animated: true)
+            
+            print("dynamiclink userActivity: \(components)")
+        }
+        return handle
     }
-
-
 }
 
