@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SplashVC" customModule="ConnerPrac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRAC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8e-1o-TiA">
+                                <rect key="frame" x="181.5" y="436" width="51.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6c-XZ-ejH">
+                                <rect key="frame" x="30" y="490" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aMm-OZ-jnX"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="u6c-XZ-ejH" firstAttribute="top" secondItem="g8e-1o-TiA" secondAttribute="bottom" constant="30" id="1H6-fo-Ko4"/>
+                            <constraint firstItem="g8e-1o-TiA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="B4i-02-Zlj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u6c-XZ-ejH" secondAttribute="trailing" constant="30" id="R6a-2w-N7F"/>
+                            <constraint firstItem="g8e-1o-TiA" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="c8W-pW-i7J"/>
+                            <constraint firstItem="u6c-XZ-ejH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="hV0-RR-JFF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="u6c-XZ-ejH" id="cJy-Kg-D1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="47"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

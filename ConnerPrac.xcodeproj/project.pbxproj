@@ -13,6 +13,11 @@
 		13229E0428E092DA001F21D6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 13229E0328E092DA001F21D6 /* RxSwift */; };
 		13323BAE28DB48C0006111C3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13323BAC28DB48C0006111C3 /* DetailVC.swift */; };
 		13323BAF28DB48C0006111C3 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13323BAD28DB48C0006111C3 /* DetailVC.xib */; };
+		13441AEE290033D700897E65 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441AED290033D700897E65 /* UIColor+Extensions.swift */; };
+		1379913929002BA80029889A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379913829002BA80029889A /* BaseVC.swift */; };
+		1379913B29002BC80029889A /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379913A29002BC80029889A /* SplashVC.swift */; };
+		1379913D29002BD40029889A /* SplashVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1379913C29002BD40029889A /* SplashVC.storyboard */; };
+		1379914029002F670029889A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 1379913F29002F670029889A /* Then */; };
 		13C74E4E28DB261000757BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C74E4D28DB261000757BFA /* AppDelegate.swift */; };
 		13C74E5228DB261000757BFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C74E5128DB261000757BFA /* ViewController.swift */; };
 		13C74E5528DB261000757BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C74E5328DB261000757BFA /* Main.storyboard */; };
@@ -28,13 +33,17 @@
 		03DB827B606BBE4AF0435872 /* Pods_ConnerPrac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnerPrac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13323BAC28DB48C0006111C3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		13323BAD28DB48C0006111C3 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		13441AED290033D700897E65 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1379913829002BA80029889A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		1379913A29002BC80029889A /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		1379913C29002BD40029889A /* SplashVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashVC.storyboard; sourceTree = "<group>"; };
 		13C74E4A28DB261000757BFA /* ConnerPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnerPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C74E4D28DB261000757BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C74E5128DB261000757BFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13C74E5428DB261000757BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13C74E5628DB261200757BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13C74E5928DB261200757BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		13C74E5B28DB261200757BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13C74E5B28DB261200757BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ConnerPrac/Supporting/Info.plist; sourceTree = SOURCE_ROOT; };
 		13C74E6128DB2D8300757BFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13C74E6928DB344400757BFA /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		13C74E6B28DB386200757BFA /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
@@ -52,6 +61,7 @@
 				13229E0028E092DA001F21D6 /* RxCocoa in Frameworks */,
 				13229E0428E092DA001F21D6 /* RxSwift in Frameworks */,
 				13229E0228E092DA001F21D6 /* RxRelay in Frameworks */,
+				1379914029002F670029889A /* Then in Frameworks */,
 				13D60EB128E099F7008976E7 /* Alamofire in Frameworks */,
 				0C0EFD8AB99811EBBBE447EE /* Pods_ConnerPrac.framework in Frameworks */,
 				13D60EAE28E0992C008976E7 /* FirebaseDynamicLinks in Frameworks */,
@@ -61,20 +71,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13229DFB28E08882001F21D6 /* Function */ = {
+		13323BAB28DB48AC006111C3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				13799130290029880029889A /* Popup */,
+				1379912F2900297B0029889A /* Page */,
 			);
-			path = Function;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		13323BAB28DB48AC006111C3 /* UI */ = {
+		1379912D290028BD0029889A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				13C74E6128DB2D8300757BFA /* GoogleService-Info.plist */,
+				13C74E5B28DB261200757BFA /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		1379912E290029020029889A /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				13323BAC28DB48C0006111C3 /* DetailVC.swift */,
 				13323BAD28DB48C0006111C3 /* DetailVC.xib */,
 			);
-			path = UI;
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1379912F2900297B0029889A /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				13799133290029D60029889A /* Splash */,
+				1379912E290029020029889A /* Detail */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		13799130290029880029889A /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		137991312900299D0029889A /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				13C74E4D28DB261000757BFA /* AppDelegate.swift */,
+				13C74E5328DB261000757BFA /* Main.storyboard */,
+				13C74E5828DB261200757BFA /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		13799132290029C20029889A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				13C74E5628DB261200757BFA /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		13799133290029D60029889A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1379913A29002BC80029889A /* SplashVC.swift */,
+				1379913C29002BD40029889A /* SplashVC.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		1379913629002B8E0029889A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1379913729002B9C0029889A /* BaseVC */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1379913729002B9C0029889A /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				1379913829002BA80029889A /* BaseVC.swift */,
+			);
+			path = BaseVC;
 			sourceTree = "<group>";
 		};
 		13C74E4128DB261000757BFA = {
@@ -98,17 +178,14 @@
 		13C74E4C28DB261000757BFA /* ConnerPrac */ = {
 			isa = PBXGroup;
 			children = (
-				13229DFB28E08882001F21D6 /* Function */,
+				1379913629002B8E0029889A /* Common */,
+				13799132290029C20029889A /* Resource */,
+				137991312900299D0029889A /* Launch */,
+				1379912D290028BD0029889A /* Supporting */,
 				13323BAB28DB48AC006111C3 /* UI */,
 				13C74E6D28DB38A900757BFA /* ConnerPrac.entitlements */,
 				13C74E6828DB343800757BFA /* Extension */,
-				13C74E6128DB2D8300757BFA /* GoogleService-Info.plist */,
-				13C74E4D28DB261000757BFA /* AppDelegate.swift */,
 				13C74E5128DB261000757BFA /* ViewController.swift */,
-				13C74E5328DB261000757BFA /* Main.storyboard */,
-				13C74E5628DB261200757BFA /* Assets.xcassets */,
-				13C74E5828DB261200757BFA /* LaunchScreen.storyboard */,
-				13C74E5B28DB261200757BFA /* Info.plist */,
 			);
 			path = ConnerPrac;
 			sourceTree = "<group>";
@@ -117,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				13C74E6928DB344400757BFA /* UILabel+Extensions.swift */,
+				13441AED290033D700897E65 /* UIColor+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -161,6 +239,7 @@
 				13229E0328E092DA001F21D6 /* RxSwift */,
 				13D60EAD28E0992C008976E7 /* FirebaseDynamicLinks */,
 				13D60EB028E099F7008976E7 /* Alamofire */,
+				1379913F29002F670029889A /* Then */,
 			);
 			productName = ConnerPrac;
 			productReference = 13C74E4A28DB261000757BFA /* ConnerPrac.app */;
@@ -195,6 +274,7 @@
 				13229DFE28E092DA001F21D6 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				13D60EAC28E0992C008976E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				13D60EAF28E099F7008976E7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1379913E29002F660029889A /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 13C74E4B28DB261000757BFA /* Products */;
 			projectDirPath = "";
@@ -210,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1379913D29002BD40029889A /* SplashVC.storyboard in Resources */,
 				13C74E5A28DB261200757BFA /* LaunchScreen.storyboard in Resources */,
 				13C74E5728DB261200757BFA /* Assets.xcassets in Resources */,
 				13C74E5528DB261000757BFA /* Main.storyboard in Resources */,
@@ -254,6 +335,9 @@
 				13323BAE28DB48C0006111C3 /* DetailVC.swift in Sources */,
 				13C74E5228DB261000757BFA /* ViewController.swift in Sources */,
 				13C74E4E28DB261000757BFA /* AppDelegate.swift in Sources */,
+				13441AEE290033D700897E65 /* UIColor+Extensions.swift in Sources */,
+				1379913929002BA80029889A /* BaseVC.swift in Sources */,
+				1379913B29002BC80029889A /* SplashVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -387,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -409,11 +493,12 @@
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ConnerPrac/Info.plist;
+				INFOPLIST_FILE = ConnerPrac/Supporting/Info.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashVC;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -426,7 +511,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,11 +527,12 @@
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ConnerPrac/Info.plist;
+				INFOPLIST_FILE = ConnerPrac/Supporting/Info.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashVC;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -459,7 +545,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -495,6 +581,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		1379913E29002F660029889A /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		13D60EAC28E0992C008976E7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -528,6 +622,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 13229DFE28E092DA001F21D6 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		1379913F29002F670029889A /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1379913E29002F660029889A /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
 		};
 		13D60EAD28E0992C008976E7 /* FirebaseDynamicLinks */ = {
 			isa = XCSwiftPackageProductDependency;
