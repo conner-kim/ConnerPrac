@@ -570,7 +570,7 @@
 				CODE_SIGN_ENTITLEMENTS = ConnerPrac/ConnerPrac.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnerPrac/Supporting/Info.plist;
@@ -604,7 +604,7 @@
 				CODE_SIGN_ENTITLEMENTS = ConnerPrac/ConnerPrac.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnerPrac/Supporting/Info.plist;
