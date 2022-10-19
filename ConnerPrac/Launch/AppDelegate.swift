@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 $0.name == "id"
             }
             
-            UIApplication.shared.keyWindow?.rootViewController?.navigationController?.pushViewController(DetailVC(id: rawTargetType?.value), animated: true)
+            UIApplication.shared.keyWindow?.rootViewController?.navigationController?.pushViewController(DetailVC(), animated: true)
             
             print("dynamiclink userActivity: \(components)")
         }

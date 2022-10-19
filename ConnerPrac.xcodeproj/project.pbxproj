@@ -14,6 +14,16 @@
 		13323BAE28DB48C0006111C3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13323BAC28DB48C0006111C3 /* DetailVC.swift */; };
 		13323BAF28DB48C0006111C3 /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13323BAD28DB48C0006111C3 /* DetailVC.xib */; };
 		13441AEE290033D700897E65 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441AED290033D700897E65 /* UIColor+Extensions.swift */; };
+		13441AF12900393000897E65 /* BaseNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441AF02900393000897E65 /* BaseNavigation.swift */; };
+		13441AF429003A0800897E65 /* BaseTabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441AF329003A0800897E65 /* BaseTabBarC.swift */; };
+		13441AF629003D4E00897E65 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441AF529003D4E00897E65 /* UIApplication+Extensions.swift */; };
+		13441AFC290040F500897E65 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441AF8290040A700897E65 /* FirstVC.swift */; };
+		13441AFD2900410000897E65 /* FirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13441AF9290040A700897E65 /* FirstVC.xib */; };
+		13441B012900414300897E65 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441AFF2900414300897E65 /* SecondVC.swift */; };
+		13441B022900414300897E65 /* SecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13441B002900414300897E65 /* SecondVC.xib */; };
+		13441B062900416200897E65 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441B042900416200897E65 /* ThirdVC.swift */; };
+		13441B072900416200897E65 /* ThirdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13441B052900416200897E65 /* ThirdVC.xib */; };
+		13441B0929004A2F00897E65 /* BaseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13441B0829004A2F00897E65 /* BaseTabBar.swift */; };
 		1379913929002BA80029889A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379913829002BA80029889A /* BaseVC.swift */; };
 		1379913B29002BC80029889A /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379913A29002BC80029889A /* SplashVC.swift */; };
 		1379913D29002BD40029889A /* SplashVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1379913C29002BD40029889A /* SplashVC.storyboard */; };
@@ -34,6 +44,16 @@
 		13323BAC28DB48C0006111C3 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		13323BAD28DB48C0006111C3 /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
 		13441AED290033D700897E65 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		13441AF02900393000897E65 /* BaseNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigation.swift; sourceTree = "<group>"; };
+		13441AF329003A0800897E65 /* BaseTabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarC.swift; sourceTree = "<group>"; };
+		13441AF529003D4E00897E65 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		13441AF8290040A700897E65 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		13441AF9290040A700897E65 /* FirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstVC.xib; sourceTree = "<group>"; };
+		13441AFF2900414300897E65 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		13441B002900414300897E65 /* SecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVC.xib; sourceTree = "<group>"; };
+		13441B042900416200897E65 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		13441B052900416200897E65 /* ThirdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdVC.xib; sourceTree = "<group>"; };
+		13441B0829004A2F00897E65 /* BaseTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBar.swift; sourceTree = "<group>"; };
 		1379913829002BA80029889A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		1379913A29002BC80029889A /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		1379913C29002BD40029889A /* SplashVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashVC.storyboard; sourceTree = "<group>"; };
@@ -80,6 +100,50 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		13441AEF2900391900897E65 /* BaseNavi */ = {
+			isa = PBXGroup;
+			children = (
+				13441AF02900393000897E65 /* BaseNavigation.swift */,
+			);
+			path = BaseNavi;
+			sourceTree = "<group>";
+		};
+		13441AF22900398A00897E65 /* BaseTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				13441AF329003A0800897E65 /* BaseTabBarC.swift */,
+				13441B0829004A2F00897E65 /* BaseTabBar.swift */,
+			);
+			path = BaseTabbar;
+			sourceTree = "<group>";
+		};
+		13441AF72900409100897E65 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				13441AF8290040A700897E65 /* FirstVC.swift */,
+				13441AF9290040A700897E65 /* FirstVC.xib */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		13441AFE2900413600897E65 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				13441AFF2900414300897E65 /* SecondVC.swift */,
+				13441B002900414300897E65 /* SecondVC.xib */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		13441B032900415500897E65 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				13441B042900416200897E65 /* ThirdVC.swift */,
+				13441B052900416200897E65 /* ThirdVC.xib */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
 		1379912D290028BD0029889A /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +165,9 @@
 		1379912F2900297B0029889A /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				13441B032900415500897E65 /* Third */,
+				13441AFE2900413600897E65 /* Second */,
+				13441AF72900409100897E65 /* First */,
 				13799133290029D60029889A /* Splash */,
 				1379912E290029020029889A /* Detail */,
 			);
@@ -144,6 +211,8 @@
 		1379913629002B8E0029889A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				13441AF22900398A00897E65 /* BaseTabbar */,
+				13441AEF2900391900897E65 /* BaseNavi */,
 				1379913729002B9C0029889A /* BaseVC */,
 			);
 			path = Common;
@@ -195,6 +264,7 @@
 			children = (
 				13C74E6928DB344400757BFA /* UILabel+Extensions.swift */,
 				13441AED290033D700897E65 /* UIColor+Extensions.swift */,
+				13441AF529003D4E00897E65 /* UIApplication+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -290,8 +360,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13441AFD2900410000897E65 /* FirstVC.xib in Resources */,
 				1379913D29002BD40029889A /* SplashVC.storyboard in Resources */,
+				13441B022900414300897E65 /* SecondVC.xib in Resources */,
 				13C74E5A28DB261200757BFA /* LaunchScreen.storyboard in Resources */,
+				13441B072900416200897E65 /* ThirdVC.xib in Resources */,
 				13C74E5728DB261200757BFA /* Assets.xcassets in Resources */,
 				13C74E5528DB261000757BFA /* Main.storyboard in Resources */,
 				13C74E6228DB2D8300757BFA /* GoogleService-Info.plist in Resources */,
@@ -331,12 +404,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13441AFC290040F500897E65 /* FirstVC.swift in Sources */,
+				13441AF629003D4E00897E65 /* UIApplication+Extensions.swift in Sources */,
+				13441B0929004A2F00897E65 /* BaseTabBar.swift in Sources */,
 				13C74E6A28DB344400757BFA /* UILabel+Extensions.swift in Sources */,
 				13323BAE28DB48C0006111C3 /* DetailVC.swift in Sources */,
+				13441AF12900393000897E65 /* BaseNavigation.swift in Sources */,
+				13441AF429003A0800897E65 /* BaseTabBarC.swift in Sources */,
 				13C74E5228DB261000757BFA /* ViewController.swift in Sources */,
 				13C74E4E28DB261000757BFA /* AppDelegate.swift in Sources */,
 				13441AEE290033D700897E65 /* UIColor+Extensions.swift in Sources */,
+				13441B062900416200897E65 /* ThirdVC.swift in Sources */,
 				1379913929002BA80029889A /* BaseVC.swift in Sources */,
+				13441B012900414300897E65 /* SecondVC.swift in Sources */,
 				1379913B29002BC80029889A /* SplashVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

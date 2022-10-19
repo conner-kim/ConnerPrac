@@ -1,13 +1,13 @@
 //
-//  DetailVC.swift
+//  BaseNavigation.swift
 //  ConnerPrac
 //
-//  Created by Conner on 2022/09/21.
+//  Created by Conner on 2022/10/19.
 //
 
 import UIKit
 
-class DetailVC: BaseVC {
+class BaseNavigation: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
