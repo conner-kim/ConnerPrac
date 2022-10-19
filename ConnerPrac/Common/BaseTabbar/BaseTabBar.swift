@@ -38,11 +38,11 @@ class BaseTabBar: UITabBar {
         self.shadowImage = UIImage()
     }
 
-    open override func sizeThatFits(_ size: CGSize) -> CGSize {
-        
-        var newSize = size
-        
-        newSize.height = 60
-        return newSize
-    }
+//    open override func sizeThatFits(_ size: CGSize) -> CGSize {
+//
+//        var newSize = size
+//
+////        newSize.height = 60
+//        return newSize
+//    }
 }
