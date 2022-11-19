@@ -28,6 +28,8 @@
 		1379913B29002BC80029889A /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379913A29002BC80029889A /* SplashVC.swift */; };
 		1379913D29002BD40029889A /* SplashVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1379913C29002BD40029889A /* SplashVC.storyboard */; };
 		1379914029002F670029889A /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 1379913F29002F670029889A /* Then */; };
+		138822422928E55B00A1F7EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138822402928E55B00A1F7EF /* LoginViewController.swift */; };
+		138822432928E55B00A1F7EF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 138822412928E55B00A1F7EF /* LoginViewController.xib */; };
 		13C74E4E28DB261000757BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C74E4D28DB261000757BFA /* AppDelegate.swift */; };
 		13C74E5228DB261000757BFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C74E5128DB261000757BFA /* ViewController.swift */; };
 		13C74E5528DB261000757BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C74E5328DB261000757BFA /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		1379913829002BA80029889A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		1379913A29002BC80029889A /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		1379913C29002BD40029889A /* SplashVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashVC.storyboard; sourceTree = "<group>"; };
+		138822402928E55B00A1F7EF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		138822412928E55B00A1F7EF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		13C74E4A28DB261000757BFA /* ConnerPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnerPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C74E4D28DB261000757BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C74E5128DB261000757BFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		1379912F2900297B0029889A /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				1388223F2928E53B00A1F7EF /* Login */,
 				13441B032900415500897E65 /* Third */,
 				13441AFE2900413600897E65 /* Second */,
 				13441AF72900409100897E65 /* First */,
@@ -226,6 +231,15 @@
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
+		1388223F2928E53B00A1F7EF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				138822402928E55B00A1F7EF /* LoginViewController.swift */,
+				138822412928E55B00A1F7EF /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		13C74E4128DB261000757BFA = {
 			isa = PBXGroup;
 			children = (
@@ -248,12 +262,12 @@
 			isa = PBXGroup;
 			children = (
 				1379913629002B8E0029889A /* Common */,
-				13799132290029C20029889A /* Resource */,
-				137991312900299D0029889A /* Launch */,
-				1379912D290028BD0029889A /* Supporting */,
-				13323BAB28DB48AC006111C3 /* UI */,
 				13C74E6D28DB38A900757BFA /* ConnerPrac.entitlements */,
 				13C74E6828DB343800757BFA /* Extension */,
+				137991312900299D0029889A /* Launch */,
+				13799132290029C20029889A /* Resource */,
+				1379912D290028BD0029889A /* Supporting */,
+				13323BAB28DB48AC006111C3 /* UI */,
 				13C74E5128DB261000757BFA /* ViewController.swift */,
 			);
 			path = ConnerPrac;
@@ -360,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138822432928E55B00A1F7EF /* LoginViewController.xib in Resources */,
 				13441AFD2900410000897E65 /* FirstVC.xib in Resources */,
 				1379913D29002BD40029889A /* SplashVC.storyboard in Resources */,
 				13441B022900414300897E65 /* SecondVC.xib in Resources */,
@@ -404,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138822422928E55B00A1F7EF /* LoginViewController.swift in Sources */,
 				13441AFC290040F500897E65 /* FirstVC.swift in Sources */,
 				13441AF629003D4E00897E65 /* UIApplication+Extensions.swift in Sources */,
 				13441B0929004A2F00897E65 /* BaseTabBar.swift in Sources */,
@@ -569,9 +585,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ConnerPrac/ConnerPrac.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = B2V8LG7269;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnerPrac/Supporting/Info.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
@@ -589,6 +607,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.conner.prfirst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AppStoreConnerPrac;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -603,9 +622,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ConnerPrac/ConnerPrac.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
-				DEVELOPMENT_TEAM = B2V8LG7269;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = B2V8LG7269;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnerPrac/Supporting/Info.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
@@ -623,6 +644,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.conner.prfirst;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AppStoreConnerPrac;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

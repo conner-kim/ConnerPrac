@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         self.linkLB.textColor = .init(red: 0, green: 0, blue: 0, alpha: 1)
         self.linkLB.numberOfLines = 0
         self.linkLB.enableCopyOnTouch {[weak self] in
-            
             guard let self = self else {
                 return
             }

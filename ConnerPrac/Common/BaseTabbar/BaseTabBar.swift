@@ -26,7 +26,7 @@ class BaseTabBar: UITabBar {
     }
     
     private func settingSubviews() {
-        self.backgroundColor = .init(hexString: "ffffff")
+        self.backgroundColor = .init(hexString: "FFFFFF")
         self.backgroundImage = UIImage()
         self.layer.cornerRadius = 16
         self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
@@ -38,11 +38,11 @@ class BaseTabBar: UITabBar {
         self.shadowImage = UIImage()
     }
 
-//    open override func sizeThatFits(_ size: CGSize) -> CGSize {
-//
-//        var newSize = size
-//
-////        newSize.height = 60
-//        return newSize
-//    }
+    open override func sizeThatFits(_ size: CGSize) -> CGSize {
+
+        var newSize = size
+
+        newSize.height = 100
+        return newSize
+    }
 }

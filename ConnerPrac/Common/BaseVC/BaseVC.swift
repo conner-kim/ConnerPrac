@@ -14,6 +14,7 @@ class BaseVC: UIViewController {
 
     
     public var disposeBag = DisposeBag()
+
     
     deinit {
         print(type(of: self).description())
@@ -21,7 +22,13 @@ class BaseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .init(hexString: "F7F7F7")
         
+        self.settingSubviews()
+    }
+    
+    private func settingSubviews() {
+        self.view.do {
+            $0.backgroundColor = .init(hexString: "F7F7F7")
+        }
     }
 }

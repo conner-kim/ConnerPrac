@@ -38,8 +38,7 @@ class BaseTabBarC: UITabBarController {
     
     private func settingController() {
         
-        let firstTab = BaseNavigation()
-        firstTab.setViewControllers([FirstVC()], animated: false)
+        let firstTab = FirstVC()
         firstTab.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         
         let secondTab = SecondVC()
